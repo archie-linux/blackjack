@@ -4,15 +4,11 @@
 
 - python blackjack.py
 
-<img src="blackjack.png" alt="drawing" width="400"/>
+<img src="blackjack.png" alt="drawing" height="300" width="200"/>
 
 ### BlackJack GUI
 
 - pip3 install Pillow 
 - python blackjack-gui.py
 
-Game Demo - <a href="https://github.com/Aparikh-Tech/blackjack/blob/master/BlackJack.mov">BlackJack</a>
-
-
-P.S. This repo is 100% AI-generated. Link to the chat: https://chatgpt.com/share/66f9bba4-930c-8006-942d-e67d0e1ed57a 
-
+### [Game Demo](https://github.com/user-attachments/assets/9299cb7c-e0ed-40f4-9682-cf5e0e0b202e)
