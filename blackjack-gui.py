@@ -266,18 +266,6 @@ class BlackjackGUI(tk.Tk):
         # Determine Outcome
         self.determine_winner()
 
-    def is_soft_17(self):
-        value = 0
-        aces = 0
-        for card in self.game.dealer_hand.cards:
-            value += card.value()
-            if card.rank == 'ace':
-                aces += 1
-        # Adjust for aces
-        while value > 21 and aces:
-            value -= 10
-            aces -= 1
-        return value == 17 and aces > 0
 
     def determine_winner(self):
         player_value = self.game.player_hand.calculate_value()
