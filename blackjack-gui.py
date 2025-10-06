@@ -254,14 +254,14 @@ class BlackjackGUI(tk.Tk):
                 self.display_card(self.dealer_frame, new_card)
                 dealer_score = self.game.dealer_hand.calculate_value()
                 self.dealer_value_label.config(text=f"Dealer's Hand Value: {dealer_score}")
-            elif dealer_score == 17 and self.is_soft_17():
-                self.game.dealer_hit()
-                new_card = self.game.dealer_hand.cards[-1]
-                self.display_card(self.dealer_frame, new_card)
-                dealer_score = self.game.dealer_hand.calculate_value()
-                self.dealer_value_label.config(text=f"Dealer's Hand Value: {dealer_score}")
-            else:
-                break
+
+            elif dealer_score == 17:
+                # Dealer stands on both soft 17 and hard 17
+                break  # Stand on 17 (soft or hard)
+
+            # Dealer stands on 18 or higher
+            elif dealer_score >= 18:
+                break  # Stand on 18 and above
 
         # Determine Outcome
         self.determine_winner()
