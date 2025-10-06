@@ -12,3 +12,5 @@
 - python blackjack-gui.py
 
 ### [Game Demo](https://github.com/user-attachments/assets/9299cb7c-e0ed-40f4-9682-cf5e0e0b202e)
+
+> This project is casually coded.
